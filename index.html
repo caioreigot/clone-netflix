@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/carousel.css">
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- Owl CSS  -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
     <title>Netflix Clone</title>
 </head>
 
@@ -13,10 +21,10 @@
         <div class="container">
             <h2 id="logo">NETFLIX</h2>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a id="nav_inicio" href="#">Inicio</a>
+                <a id="nav_series" href="#">Séries</a>
+                <a id="nav_filmes" href="#">Filmes</a>
+                <a id="nav_documentarios" href="#">Documentários</a>
             </nav>
         </div>
     </header>
@@ -40,8 +48,62 @@
         </div>
     </main>
 
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img onmouseover="seriesImgHover(event)" 
+                    onmouseout="seriesImgOut(event)" class="box-filme" 
+                    src="img/capa1.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa2.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa3.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa4.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa5.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa6.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa7.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa8.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa9.jpg">
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-play"></i>
+                <img class="box-filme" src="img/capa10.jpg">
+            </div>
+        </div>
+    </div>
+
     <!-- fontawesome.com (fonte dos icones) -->
     <script src="https://kit.fontawesome.com/9206ce94d1.js" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="js/owl/jquery.min.js"></script>
+    
+    <!-- Own Carousel -->
+    <script src="js/owl/owl.carousel.min.js"></script>
+    
     <script src="js/main.js"></script>
 
 </body>

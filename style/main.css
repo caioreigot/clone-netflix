@@ -15,7 +15,7 @@
 body {
     background: var(--preto);
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
 }
 
 header .container {
@@ -23,16 +23,17 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    min-height: 56px;
 }
 
 header #logo {
-    margin-left: 8px;
+    margin-left: 32px;
     margin-right: 16px;
     
     color: var(--vermelho);
     
     font-family: 'Arial Black';
-    font-size: 40px;
+    font-size: 34px;
 }
 
 header nav {
@@ -44,8 +45,8 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px;
-    font-size: clamp(1px, 3vw, 20px);
+    margin-right: 32px;
+    font-size: clamp(16px, 3vw, 18px);
 }
 
 header nav a:hover {

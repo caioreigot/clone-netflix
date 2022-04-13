@@ -20,3 +20,29 @@ function checkMarginNeed() {
     dependendo da largura do container à qual este botão está aninhado*/
     rightButton.style.marginTop = (containerWidth <= 443) ? '8px' : '0px';
 }
+
+/*Implementando o Owl Carousel com o JQuery*/
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+})
+
+// let seriesImgHover = (e) => {
+//     e.target.parentNode.getElementsByClassName("fa-solid fa-play")[0].style.display = 'block';
+// }
+
+// let seriesImgOut = (e) => {
+//     e.target.parentNode.getElementsByClassName("fa-solid fa-play")[0].style.display = 'none';
+// }

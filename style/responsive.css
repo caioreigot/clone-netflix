@@ -1,0 +1,33 @@
+/*Alterando estilos quando a largura da tela for <= 700px*/
+@media screen and (max-width: 700px) {
+    header .container #logo {
+        margin-top: 6px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .container nav {
+        padding-top: 2px;
+        padding-bottom: 6px;
+    }
+
+    header .container nav a {
+        margin-right: 0px;
+    }
+
+    #nav_inicio, #nav_series, #nav_filmes {
+        margin-right: 15px;
+    }
+}
+
+/*Alterando estilos quando a largura da tela for >= 1000px*/
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 55%;
+    }
+}
