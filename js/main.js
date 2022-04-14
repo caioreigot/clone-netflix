@@ -39,10 +39,8 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-// let seriesImgHover = (e) => {
-//     e.target.parentNode.getElementsByClassName("fa-solid fa-play")[0].style.display = 'block';
-// }
-
-// let seriesImgOut = (e) => {
-//     e.target.parentNode.getElementsByClassName("fa-solid fa-play")[0].style.display = 'none';
-// }
+/*Função que exibe/fecha o dialog do botão "MAIS INFORMAÇÕES" da tela principal */
+function moreInfoClick() {
+    e = document.getElementById("dialog-more-info-bg");
+    e.style.visibility = (e.style.visibility == "visible") ? "hidden" : "visible";
+}

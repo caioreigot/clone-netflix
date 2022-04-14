@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Ícone presente na aba da página -->
+    <link rel="shortcut icon" href="img/logo.ico">
+    <!-- CSS principal da página -->
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/carousel.css">
-    <!-- Responsividade -->
+    <!-- CSS responsável pela responsividade da página -->
     <link rel="stylesheet" href="style/responsive.css">
-
+    <!-- CSS responsável pelo carousel onde está os filmes/séries -->
+    <link rel="stylesheet" href="style/carousel.css">
     <!-- Owl CSS  -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
@@ -29,6 +33,55 @@
         </div>
     </header>
 
+    <div id="dialog-more-info-bg">
+        <div role="dialog" class="dialog-container">
+            <button role="button" class="botao-circular fechar-dialog" onclick="moreInfoClick()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="dialog-banner">
+                <h3>BREAKING BAD</h3>
+                <div class="buttons">
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR
+                    </button>
+                    <button role="button" class="botao-circular">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button role="button" class="botao-circular">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bottom-container">
+                <div class="left-side">
+                    <div>
+                        <span class="relevancia">88% relevante</span>
+                        <span>2008</span>
+                        <button class="faixa-etaria">18</button>
+                        <span>5 Temporadas</span>
+                        <button class="qualidade">HD</button>
+                    </div>
+                    <p>
+                        Ao saber que tem câncer, um professor passa a fabricar 
+                        metanfetamina pelo futuro da família, mudando o destino 
+                        de todo.
+                    </p>
+                </div>
+                <div class="right-side">
+                    <span class="titulo">Elenco:</span>
+                    <span class="conteudo">Bryan Cranston, Aaron Paul, Anna Gunn, Dean Norris, Betsy Brandt, RJ Mitte, Krysten Ritter ...</span>
+                    <br><br>
+                    <span class="titulo">Gêneros:</span>
+                    <span class="conteudo">Séries policiais, Suspense para TV, Séries dramáticas</span>
+                    <br><br>
+                    <span class="titulo">Cenas e momentos:</span>
+                    <span class="conteudo">Violentos, Realistas, Sombrios</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <div class="filme-principal">
             <div class="container">
@@ -39,7 +92,7 @@
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="moreInfoClick()">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
                     </button>
