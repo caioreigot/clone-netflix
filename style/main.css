@@ -136,7 +136,7 @@ main .filme-principal .botao {
     margin-left: 20px;
 }
 
-/* "MAIS INFORMAÇÕES" Dialog Box */
+/*"MAIS INFORMAÇÕES" Dialog Box*/
 
 #dialog-more-info-bg {
     visibility: hidden;
@@ -152,7 +152,7 @@ main .filme-principal .botao {
 
 #dialog-more-info-bg .dialog-container {
     width: 70%;
-    max-height: 90%;
+    max-height: 92%;
 
     border-radius: 10px;
     background-color: var(--preto);
@@ -170,6 +170,26 @@ main .filme-principal .botao {
 
     overflow: auto;
 }
+
+/*Barra de rolagem do dialog*/
+
+#dialog-more-info-bg .dialog-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+#dialog-more-info-bg .dialog-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#dialog-more-info-bg .dialog-container::-webkit-scrollbar-thumb {
+    background-color: rgba(152, 152, 152, 0.5);
+    background-clip: padding-box;
+    
+    border-top: 4px transparent solid;
+    border-bottom: 4px transparent solid;
+}
+
+/* Estilizando o banner (parte superior) do MAIS INFORMAÇÕES dialog */
 
 #dialog-more-info-bg .dialog-banner {
     border-radius: 10px 10px 0 0;
@@ -193,8 +213,42 @@ main .filme-principal .botao {
     justify-content: end;
     padding: 0 0 40px 40px;
 }
-.buttons .botao-circular, .buttons .botao {
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons .botao-circular {
     margin-right: 5px;
+}
+
+/*Adaptando o botão circular do dialog para escalar melhor com a tela*/
+.buttons .botao-circular {
+    width: 3vw;
+    height: 3vw;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+/*Adaptando o botão retangular do dialog para escalar melhor com a tela*/
+.buttons .botao {
+    width: 15vw;
+    min-width: 140px;
+    margin-right: 10px;
+}
+
+/*Adaptando o título da série/filme do dialog para escalar melhor com a tela*/
+#dialog-more-info-bg .dialog-banner h3 {
+    font-size: clamp(20px, 5vw, 38px) !important;
+}
+
+/*Adaptando a fonte das palavras na parte inferior do dialog para escalar melhor com a tela*/
+#dialog-more-info-bg .bottom-container p,
+#dialog-more-info-bg .bottom-container span,
+#dialog-more-info-bg .bottom-container button {
+    font-size: clamp(10px, 2vw, 15px) !important;
 }
 
 #dialog-more-info-bg .fechar-dialog {
@@ -212,7 +266,7 @@ main .filme-principal .botao {
     align-items: flex-start;
 }
 
-/*Lado esquerdo da "MAIS INFORMAÇÕES" dialog*/
+/*Lado esquerdo da parte inferior do "MAIS INFORMAÇÕES" dialog*/
 
 #dialog-more-info-bg .bottom-container .left-side {
     width: 60%;
@@ -262,7 +316,7 @@ main .filme-principal .botao {
     margin-bottom: 30px;
 }
 
-/*Lado direito da "MAIS INFORMAÇÕES" dialog*/
+/*Lado direito da parte inferior do "MAIS INFORMAÇÕES" dialog*/
 
 #dialog-more-info-bg .bottom-container .right-side {
     width: 40%;

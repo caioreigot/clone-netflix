@@ -1,3 +1,11 @@
+/*Alterando estilos quando a largura da tela for <= 740px*/
+@media screen and (max-width: 740px) {
+    /*:nth-child(2) especifica que quero dar margin-top apenas no 2 botão*/
+    main .filme-principal .container .botoes button:nth-child(2) {
+        margin-top: 8px;
+    }
+}
+
 /*Alterando estilos quando a largura da tela for <= 700px*/
 @media screen and (max-width: 700px) {
     header .container #logo {
@@ -29,5 +37,39 @@
 @media screen and (min-width: 1000px) {
     .descricao {
         width: 55%;
+    }
+}
+
+/*Alterando estilos quando a largura da tela for <= 440px*/
+@media screen and (max-width: 440px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons .botao-circular {
+        margin-top: 12px;
+        min-width: 35px;
+        min-height: 35px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #dialog-more-info-bg .bottom-container {
+        padding: 20px;
+    }
+} 
+
+@media screen and (max-width: 378px) {
+    #dialog-more-info-bg .dialog-banner .botao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        font-size: 2vw;
+        width: 2vw;
+        min-width: 100px;
+        padding: 10px 20px 10px 20px;
     }
 }
