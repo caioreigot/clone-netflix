@@ -1,0 +1,197 @@
+#dialog-more-info-bg {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    position: fixed;
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: 1000;
+}
+
+#dialog-more-info-bg .dialog-container {
+    width: 70%;
+    max-height: 92%;
+
+    border-radius: 10px;
+    background-color: var(--preto);
+    color: white;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+
+    overflow: auto;
+}
+
+/*Barra de rolagem do dialog*/
+
+#dialog-more-info-bg .dialog-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+#dialog-more-info-bg .dialog-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#dialog-more-info-bg .dialog-container::-webkit-scrollbar-thumb {
+    background-color: rgba(152, 152, 152, 0.5);
+    background-clip: padding-box;
+    
+    border-top: 4px transparent solid;
+    border-bottom: 4px transparent solid;
+}
+
+/* Estilizando o banner (parte superior) do MAIS INFORMAÇÕES dialog */
+
+#dialog-more-info-bg .dialog-banner {
+    border-radius: 10px 10px 0 0;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0), var(--preto) 100%), url('../img/dialog_breaking_bad_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#dialog-more-info-bg .dialog-banner h3 {
+    font-size: 38px;
+    font-family: Arial;
+    margin-bottom: 24px;
+}
+
+#dialog-more-info-bg .dialog-banner {
+    justify-content: end;
+    padding: 0 0 40px 40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons .botao-circular {
+    margin-right: 5px;
+}
+
+/*Adaptando o botão circular do dialog para escalar melhor com a tela*/
+.buttons .botao-circular {
+    width: 3vw;
+    height: 3vw;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+/*Adaptando o botão retangular do dialog para escalar melhor com a tela*/
+.buttons .botao {
+    width: 15vw;
+    min-width: 140px;
+    margin-right: 10px;
+}
+
+/*Adaptando o título da série/filme do dialog para escalar melhor com a tela*/
+#dialog-more-info-bg .dialog-banner h3 {
+    font-size: clamp(20px, 5vw, 38px) !important;
+}
+
+/*Adaptando a fonte das palavras na parte inferior do dialog para escalar melhor com a tela*/
+#dialog-more-info-bg .bottom-container p,
+#dialog-more-info-bg .bottom-container span,
+#dialog-more-info-bg .bottom-container button {
+    font-size: clamp(10px, 2vw, 15px) !important;
+}
+
+#dialog-more-info-bg .fechar-dialog {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+}
+
+#dialog-more-info-bg .bottom-container {
+    padding: 10px 50px 40px 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*Lado esquerdo da parte inferior do "MAIS INFORMAÇÕES" dialog*/
+
+#dialog-more-info-bg .bottom-container .left-side {
+    width: 60%;
+    margin-right: 40px;
+}
+
+#dialog-more-info-bg .bottom-container .left-side span {
+    margin-right: 10px;
+}
+
+#dialog-more-info-bg .bottom-container .left-side .relevancia {
+    color: rgb(90, 234, 90);
+}
+
+#dialog-more-info-bg .bottom-container .left-side .faixa-etaria {
+    background-color: rgb(246, 41, 41);
+    color: white;
+    
+    font-size: 17px;
+    font-family: 'Trebuchet MS';
+    
+    padding: 4px 6px;
+    margin-right: 10px;
+    
+    border: none;
+    border-radius: 1px;
+}
+
+#dialog-more-info-bg .bottom-container .left-side .qualidade {
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    
+    font-size: 10px;
+    font-family: 'Arial';
+    
+    padding: 2px 6px;
+    
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#dialog-more-info-bg .bottom-container .left-side p {
+    font-size: 16px;
+    font-family: Arial;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Lado direito da parte inferior do "MAIS INFORMAÇÕES" dialog*/
+
+#dialog-more-info-bg .bottom-container .right-side {
+    width: 40%;
+}
+
+#dialog-more-info-bg .bottom-container .right-side .titulo {
+    color: #7b7b7b;
+
+    font-size: 15px;
+    font-family: Arial;
+}
+
+#dialog-more-info-bg .bottom-container .right-side .conteudo {
+    color: white;
+
+    font-size: 15px;
+    font-family: Arial;
+}
