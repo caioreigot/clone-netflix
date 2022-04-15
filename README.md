@@ -9,7 +9,7 @@ Clique <a href="https://caioreigot.github.io/clone-netflix">AQUI</a> para entrar
 ![2](https://user-images.githubusercontent.com/62410044/163525839-11e0e78a-76a7-4fb1-bd6b-12f68a20613c.PNG)
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/62410044/163525847-1b04683a-234f-4512-9f4a-d63e390f1ba3.PNG">
+  <img src="https://user-images.githubusercontent.com/62410044/163588187-d5b4bde8-9e1f-4601-b7e5-5083eca48e0a.PNG">
 </div>
 
 ![3](https://user-images.githubusercontent.com/62410044/163525842-d189465b-4c63-4d4c-862f-d49584dcf737.PNG)
