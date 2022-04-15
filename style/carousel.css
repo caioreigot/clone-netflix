@@ -24,6 +24,7 @@
     vertical-align: top;
 }
 
+/*Ao ficar com o mouse encima da capa da série/filme, ela irá crescer*/
 .item:hover .box-filme {
     transform: scale(1.05);
 }
@@ -31,27 +32,36 @@
 .item::after {
     content: '';
     position: absolute;
-    width: 100%; height: 100%;
-    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0;
+    
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
+    
     transition: all 0.2s ease;
 }
 
+/*"Escurecendo o background" ao exibir um fundo preto transparente*/
 .item:hover::after {
     opacity: 1;
     transform: scale(1.05);
 }
 
+/*Estilizando o ícone de play*/
 .item i {
-    position: absolute;
-    top: 50%; left: 50%;
-    z-index: 10;
-    transform: scale(4);
     display: none;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    z-index: 10;
+    
+    transform: scale(4);
     cursor: pointer;
 }
 
+/*Ao ficar com o mouse encima da capa da série/filme, o ícone de play aparece*/
 .item:hover i {
     display: block;
 }
