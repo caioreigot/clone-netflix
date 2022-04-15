@@ -10,8 +10,6 @@
     box-sizing: border-box;
 }
 
-/*Elementos base*/
-
 body {
     background: var(--preto);
     color: white;
@@ -53,7 +51,11 @@ header nav a:hover {
     color: #fff;
 }
 
-/*Filme principal*/
+header nav #nav_inicio {
+    color: #fff;
+}
+
+/*Estilização da div que contém o banner da série principal*/
 
 .filme-principal {
     font-size: 16px;
@@ -84,6 +86,7 @@ header nav a:hover {
     background-color: rgba(0, 0, 0, .50);
     border: none;
     color: white;
+    -webkit-tap-highlight-color: transparent;
 
     padding: 15px 30px;
     font-size: 12px;
@@ -114,8 +117,9 @@ main .filme-principal .botao {
     width: 40px;
     height: 40px;
     
-    background-color: rgba(0, 0, 0, .50);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    -webkit-tap-highlight-color: transparent;
     
     border: 1px solid white;
     border-radius: 50%;
@@ -124,6 +128,11 @@ main .filme-principal .botao {
     transition-property: background-color, color;
     transition-duration: 0.3s, 0.3s;
     transition-timing-function: ease;
+}
+
+.fechar-dialog {
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .botao-circular:hover {

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/main.css">
     <!-- CSS de Dialogs -->
     <link rel="stylesheet" href="style/more-info-dialog.css">
+    <link rel="stylesheet" href="style/watch-now-dialog.css">
     <!-- CSS responsável pela responsividade da página -->
     <link rel="stylesheet" href="style/responsive.css">
     <!-- CSS responsável pelo carousel onde está os filmes/séries -->
@@ -35,6 +36,15 @@
         </div>
     </header>
 
+    <div id="dialog-watch-now-bg">
+        <div role="dialog" class="dialog-container">
+            <button role="button" class="botao-circular fechar-dialog" onclick="watchNowClick()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="player"></div>
+        </div>
+    </div>
+
     <div id="dialog-more-info-bg">
         <div role="dialog" class="dialog-container">
             <button role="button" class="botao-circular fechar-dialog" onclick="moreInfoClick()">
@@ -43,7 +53,7 @@
             <div class="dialog-banner">
                 <h3>BREAKING BAD</h3>
                 <div class="buttons">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="closeMoreInfoAndOpenTrailer()">
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR
                     </button>
@@ -92,7 +102,7 @@
                 <h3 class="titulo">BREAKING BAD</h3>
                 <p class="descricao">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="watchNowClick()">
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR AGORA
                     </button>
