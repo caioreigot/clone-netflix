@@ -1,7 +1,7 @@
 # Clone da Netflix
 ### Site responsivo que traz alguns dos principais elementos do site Netflix
 <br>
-Clique <a href="https://caioreigot.github.io/clone-netflix">AQUI</a> para entrar no site (segure o botão CTRL ao clicar para abrir em outra página)
+Clique <a href="https://caioreigot.github.io/clone-netflix">AQUI</a> para entrar no site (segure o botão CTRL ao clicar para abrir em outra aba)
 
 ## Prints:
 ![1](https://user-images.githubusercontent.com/62410044/163525832-4cad7848-b217-4e41-9c5a-8c0123a38d47.PNG)
