@@ -1,3 +1,19 @@
+/*Esta media rule detecta dispositivos mobile (incluindo tablets e smartphones) e touch screen*/
+@media only screen and (hover: none) and (pointer: coarse) { 
+    header nav a:hover {
+        color: var(--cinza-nav-a);
+        background-color: inherit;
+    }
+}
+
+/*Alterando estilos quando a largura da tela for <= 780*/
+@media screen and (max-width: 780px) {
+    /*Alterando a largura do dialog do MAIS INFORMAÇÕES pra 90%*/
+    #dialog-more-info-bg .dialog-container {
+        width: 90%;
+    }
+}
+
 /*Alterando estilos quando a largura da tela for <= 740px*/
 @media screen and (max-width: 740px) {
     /*:nth-child(2) especifica que quero dar margin-top apenas no 2 botão*/

@@ -2,6 +2,7 @@
 :root {
     --vermelho: #E50914;
     --preto:  #141414;
+    --cinza-nav-a: #aaa;
 }
 
 * {
@@ -27,6 +28,8 @@ header .container {
 header #logo {
     margin-left: 32px;
     margin-right: 16px;
+
+    user-select: none;
     
     color: var(--vermelho);
     
@@ -42,7 +45,7 @@ header nav {
 /*O menu horizontal ao lado da logo NETFLIX*/
 header nav a {
     text-decoration: none;
-    color: #AAA;
+    color: var(--cinza-nav-a);
     margin-right: 32px;
     font-size: clamp(16px, 3vw, 18px);
 }
@@ -87,6 +90,8 @@ header nav #nav_inicio {
     border: none;
     color: white;
     -webkit-tap-highlight-color: transparent;
+
+    user-select: none;
 
     padding: 15px 30px;
     font-size: 12px;
