@@ -14,8 +14,8 @@
     }
 }
 
-/*Alterando estilos quando a largura da tela for <= 740px*/
-@media screen and (max-width: 740px) {
+/*Alterando estilos quando a largura da tela for <= 755px*/
+@media screen and (max-width: 755px) {
     /*:nth-child(2) especifica que quero dar margin-top apenas no 2 botão*/
     main .filme-principal .container .botoes button:nth-child(2) {
         margin-top: 8px;
